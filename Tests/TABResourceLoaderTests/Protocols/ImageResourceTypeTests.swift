@@ -21,7 +21,7 @@ class ImageResourceTypeTests: XCTestCase {
 
   func test_resultFromData_whenDataIsInvalid() {
     do {
-      let _ = try mockImageResourceType.model(from: Data())
+      _ = try mockImageResourceType.model(from: Data())
       XCTFail("Expected .Failure but got .Success")
     } catch {
       XCTAssertEqual(error as? ImageDownloadingError, ImageDownloadingError.invalidImageData)
