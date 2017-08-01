@@ -1,5 +1,9 @@
 # Change Log
 
+## 5.1.0
+
+- Added default extension for handling resources where the response does not need to be parsed, i.e. resources `Void` `Model`s
+
 ## 5.0.1
 
 Moved internal `Result` to test target
